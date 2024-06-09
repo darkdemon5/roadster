@@ -6,10 +6,10 @@ import logo from "../assets/tesla.svg";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className=" h-10 w-full">
       <ul>
         <li>
-          <img src={logo} alt="Tesla" />
+          <img src={logo} alt="Tesla" className="w-[160px]" />
         </li>
         <li>Vehicles</li>
         <li>Energy</li>
@@ -17,7 +17,7 @@ const Navbar = () => {
         <li>Discover</li>
         <li>Shop</li>
 
-        <li>
+        <ul>
           <li>
             <GrCircleQuestion />
           </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <CgProfile />
           </li>
-        </li>
+        </ul>
       </ul>
     </div>
   );
